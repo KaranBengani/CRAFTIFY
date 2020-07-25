@@ -1,0 +1,23 @@
+.imageclass{width: 30vw;
+              height:65vh;}
+
+.maincont{display:grid;
+          grid-template-columns: 400px auto 100px;
+          }
+.maincont>*{
+    grid-column: 2;
+    min-width: 0;
+}
+@media only screen and (max-width:480px){
+    .webcont{
+        grid-template-columns: 10px auto 10px;
+        
+    }
+    .imageclass{
+        width:10vw;
+        height:35vh;
+
+    }
+    .maincont{grid-template-columns: 10px auto 10px;
+               }
+}

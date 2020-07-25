@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!--========================================================================BOOTSTRAP CSS LINK=====================================================================-->
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!--===============================================EXTERNAL CSS FILE LINK==========================================-->
+
+<link rel="stylesheet" type="text/css"href="sign.css">
+
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<!--========================================================================BOOTSTRAP JS LINK=========================================================================-->
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--========================================================================FONT AWESOME LINK=========================================================================-->
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<!--========================================================================HEADER SECTION=========================================================================-->
+<body class="bg">
+  <header class="top">
+    <div class="lgbox">
+      <div class="box">
+       <img src="Images/logo.png" alt="brand Logo" class="lgboximg">
+       <div class="lgcontent">
+         
+         <h1 class="lgcontentf">KRAFTIFY</h1>
+
+         <p class="lgcontentp">Become Vocal About Local</p>
+    </div>
+    </div>
+    </div>
+  </header>
+  <!--========================================================================NAV-BAR SECTION=========================================================================-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bg sliderbox">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav justify-content-end navlink ">
+          <li class="nav-item">
+            <!--Links-->
+            <a class="nav-link" href="aboutus.html">About Us &nbsp&nbsp&nbsp&nbsp •</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ShopUs.html">Shop With Us &nbsp&nbsp&nbsp&nbsp • </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="joinUs.html">Join Us &nbsp&nbsp&nbsp&nbsp • </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up/Sign-In &nbsp&nbsp&nbsp&nbsp • </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact Us">Contact Us &nbsp&nbsp&nbsp&nbsp • </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart</a>
+          </li>
+        </ul>
+  </div>
+  <a style="font-size:160%;"class="navbar-brand " href="index.html">
+    <img style="margin-top:8%;"src="Images/logo.png" width="30" height="30" class="d-inline-block align-top " alt="Brand Logo" loading="lazy">
+    KRAFTIFY
+  </a>
+</nav>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <!-- backend-file -->
+  <form class="modal-content" action="/action_page.php"> 
+    <div class="container">
+      <div class="button-flex">
+      <button type="button" onclick="upshow()">Sign Up</button>
+      <button type="button" onclick="inshow()">Sign In</button>
+    </div>
+      <div id="#signup" class="signup">
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      
+     
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+      </div>
+      
+      <div id="signin">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+        
+       
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign In</button>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>
+<!--========================================================================CAROUSEL SECTION1=========================================================================-->
+
+  
+<section class="webcont">
+<div id="carouselExampleCaptions" class="carousel slide sliderone shadow" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <!--Carousel Images-->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/lemon.JPG" class="d-block w-100 imageclass" alt="Lemon Essential Oil">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/winter.JPG" class="d-block w-100 imageclass" alt="Winter Clothes">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img  src="Images/pickles.JPG" class="d-block w-100 imageclass" alt="Pickles">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--========================================================================CARD SECTION 1=========================================================================-->
+
+<h2>IN THE SPOTLIGHT:</h2>
+<section class="cardone maincont1 ">
+   <!--Card Images-->
+<section class="firstcard ">   
+<div class="row row-cols-1 row-cols-md-2  ">
+  <div class="col mb-4">
+    <div class="card shadow slideanim">
+      <img  style=" padding:3%;"src="Images/cookie.JPG" class="card-img-top topimg" alt="Cookies">
+      <div class="card-body ">
+        
+        <p class="card-text size">Sweet Cookies To Make Your Moments Sweeter!</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col mb-4">
+    <div class="card shadow slideanim">
+      <img  style=" padding:1%;" src="Images/facewash.JPG" class="card-img-top topimg" alt="Facewash">
+      <div class="card-body" >
+       
+        <p class="card-text size">Stress Causing Havoc On Your Skin?<br>Find The Right Solution For You!</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col mb-4">
+    <div class="card shadow slideanim ">
+      <img  style=" padding:1%;" src="Images/oil.JPG" class="card-img-top topimg" alt="Oils">
+      <div class="card-body ">
+        
+        
+        <p class="card-text size">Smooth Those Flyaways!
+        <br> Must-Have Serums.
+        </p>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col mb-4">
+    <div class="card shadow slideanim ">
+      <img  style=" padding:3%;" src="Images/photo.webp" class="card-img-top topimg" alt="Photo Frames">
+      <div class="card-body">
+        
+        <p class="card-text size">Capture Memories With Us. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!--========================================================================CARD SECTION 2=========================================================================-->
+<h2>FEATURED BRANDS:</h2>
+<section class="cardone maincont">
+  <section class="secondcard">
+     <!--Card Images-->
+<div class="card-deck">
+  <div class="card shadow slideanim">
+    <img  src="Images/cooks.jfif" class="card-img-top secondimg" alt="Cookies">
+    <div class="card-body">
+     
+      <p class="card-text size1">Treat Of A Guilt-Free Sin.</p>
+     
+    </div>
+  </div>
+  <div class="card shadow slideanim">
+    <img src="Images/olive.jpg" class="card-img-top secondimg " alt="Oil">
+    <div class="card-body">
+      
+      <p class="card-text size1">Found!<br>Fixes To all Hair problems.</p>
+      
+    </div>
+  </div>
+  <div class="card shadow slideanim">
+    <img src="Images/cook.png" class="card-img-top secondimg  " alt="Utensils">
+    <div class="card-body">
+      <h5 class="card-title size1">Give Your Guests <br> The Royal Treatment</h5>
+      <p class="card-text"></p>
+      
+    </div>
+  </div>
+</div>
+
+ <!--Card Images-->
+<div class="card-deck">
+  <div class="card shadow slideanim">
+    <img src="Images/last.jpg" class="card-img-top secondimg  " alt="Shampoos">
+    <div class="card-body">
+      
+      <p class="card-text size1">Stay Sqeaky Clean! <br>Mood Boosting Shampoos.</p>
+      
+    </div>
+  </div>
+  <div class="card shadow slideanim">
+    <img src="Images/vase.webp" class="card-img-top secondimg  " alt="Flower Vase">
+    <div class="card-body">
+     
+      <p class="card-text size1">Autumn is a second spring when every leaf is a flower.</p>
+     
+    </div>
+  </div>
+  <div class="card shadow slideanim">
+    <img src="Images/choco.jpg" class="card-img-top secondimg  " alt="Chocolates">
+    <div class="card-body">
+    
+      <p class="card-text size1">CHOCOLATE is The Answer.<br>Who Cares What The Question is?</p>
+     
+    </div>
+  </div>
+</div>
+</section></section>
+<!--===================================================================CAROUSEL SECTION 2==============================================================================-->
+<h2> TOP OFFERS:</h2>
+<section class="cardone ">
+  
+<div id="carouselExampleIndicators" class="carousel slide first shadow" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <!--Carousel Images-->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img " src="Images/top.JPG" class="d-block w-100 imageclass" alt="tops">
+    </div>
+    <div class="carousel-item">
+      <img  src="Images/cake.JPG" class="d-block w-100 imageclass" alt="Cakes">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/denim.jpg" class="d-block w-100 imageclass" alt="Denims">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></section>
+
+
+<!--========================================================================CARD SECTION 3=========================================================================-->
+
+<h2>MADE WITH LOVE:</h2>
+<section class="thirdcard">
+<section class="cardone maincont">
+  <!--Card Images-->
+<div class="card-deck">
+  <div class="card shadow slideanim">
+    <img src="Images/ess.jpg" class="card-img-top thirdimg" alt="Essential oils">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text size1">Bring The Salon Home<br>Happy Self-Grooming!</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card shadow slideanim">
+    <img src="Images/moist.jfif" class="card-img-top thirdimg" alt="Face Cream">
+    <div class="card-body" >
+      <h5 class="card-title"></h5>
+      <p class="card-text size1">Look Great, Feel Great!<br> Try Out Some of The Purest Essential Oils.</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card shadow slideanim">
+    <img src="Images/sham.jpg" class="card-img-top thirdimg" alt="Oils">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text size1">Dermatologist Formulated Skin & Hair Potions.</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+</div>
+</section></section>
+<!--========================================================================JOIN US SECTION=========================================================================-->
+<h2>Join Us Now</h2>
+<section class="cardone maincont">
+ 
+<div class="card text-center">
+  
+  <div class="card-header">
+    
+  </div>
+  <!--Links-->
+  <div class="card-body">
+    <h5 class="card-title size">Get Your Brand Featured</h5>
+    <p class="card-text"></p>
+    <a href="#" class="btn btn-primary size1">JOIN us</a>
+  </div>
+  <div class="card-footer text-muted">
+  
+  </div>
+</div>
+</section>
+</section>
+<a name="Contact Us"></a>
+<br>
+<br>
+<br>
+<!--========================================================================FOOTER SECTION=========================================================================-->
+<footer>
+  <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark cardone">
+
+  <div style="background-color: #E0DDCF;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0 size">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <i class='fab fa-facebook-f' style='font-size:30px;color:#2E1E0F;'></i>&nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- Twitter -->
+          <i class='fab fa-twitter' style='font-size:30px;color:#2E1E0F;'></i>&nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- Google +-->
+          <i class='fab fa-google-plus-g' style='font-size:30px;color:#2E1E0F;'></i>&nbsp;&nbsp;&nbsp;&nbsp;
+          <!--Linkedin -->
+          <i class='fab fa-linkedin-in' style='font-size:30px;color:#2E1E0F;'></i>&nbsp;&nbsp;&nbsp;&nbsp;
+          <!--Instagram-->
+          <i class='fab fa-instagram' style='font-size:30px;color:#2E1E0F;'></i>&nbsp;&nbsp;&nbsp;&nbsp;
+       
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">KRAFTIFY</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p><i class='fas fa-tags' style='font-size:30px;color:#2E1E0F;'></i>&nbsp; &nbsp;560+ Brands Endorsed</p>
+        <p><i class='fab fa-cc-paypal' style='font-size:30px;color:#2E1E0F;'></i>&nbsp; &nbsp;Pay On Delivery</p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Categories</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Clothes</a>
+        </p>
+        <p>
+          <a href="#!">Self-Care</a>
+        </p>
+        <p>
+          <a href="#!">Home-Decor</a>
+        </p>
+        <p>
+          <a href="#!">Edibles</a>
+        </p>
+        <p>
+          <a href="#!">Accessories</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">About Us</a>
+        </p>
+        <p>
+          <a href="#!">Shop With Us</a>
+        </p>
+        <p>
+          <a href="#!">Sign-Up/Sign-In</a>
+        </p>
+       
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        
+        <p>
+          <i class="fas fa-envelope mr-3" style='color:#2E1E0F;'></i> info@example.com</p>
+        <p>
+          <i class="fas fa-phone mr-3" style='color:#2E1E0F;'></i> + 01 234 567 88</p>
+        <p>
+          <i class="fas fa-print mr-3" style='color:#2E1E0F;'></i> + 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+
+</footer>
+<!-- Footer -->
+<div class="last"></div>
+</footer>
+<!--=====================================================================EXTERNAL JS FILE LINK=======================================================================-->
+<script src="template.js"></script>
+<script src="sign.js"></script>
+</body>
+</html>
+<!--================================================================================END==============================================================================-->

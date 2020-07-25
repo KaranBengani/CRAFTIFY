@@ -1,0 +1,269 @@
+/*=================================================================================START===============================================================================*/
+/*==============================================================================VARIABLES===============================================================================*/
+:root{
+  --fcrow:400px;
+  --fccolumn:repeat(2,minmax(40vw,1fr));
+  --scrow: 250px;
+  --sccolumn:repeat(3,minmax(30vh,1fr));
+  --tcrow:repeat(1,minmax(30vh,1fr));
+}
+/*==============================================================================BODY SECTION STYLE======================================================================*/
+html{scroll-behavior: smooth;}
+
+body, html {
+  height: 100%;
+  margin:0 auto;
+
+}
+.shadow{box-shadow: 0 1rem 2rem rgba(0,0,0,0.6)!important;}
+/*==============================================================================CSS GRID===============================================================================*/
+.webcont{
+display: grid;
+grid-template-columns: 150px auto 150px;
+
+}
+.webcont > *{
+  grid-column:2;
+  min-width: 0;
+  }
+
+  .webcont footer{
+    grid-column:1/-1;
+    min-width: 0;
+    }
+/*==============================================================================HEADER CSS=============================================================================*/
+  h2{font-family:sam;
+    font-weight:900;
+    color: #2E1E0F;
+    text-align:center;
+    font-size:300%;
+    margin-top:4%;
+    margin-bottom:4%;}
+    /*==============================================================================BACKGROUND=========================================================================*/
+
+    .imageclass{width: 30vw;
+      height:75vh;}
+
+    
+
+.bg {
+
+  background-image: url("Images/background1.JPG");
+  height:100%;
+  width:100%;
+  background-repeat: repeat;
+
+    }
+.top {
+    height:60vh;
+    width:100%;
+
+    background:  linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),url("Images/one.jpg");
+    padding-top: 5.5%;
+     }
+
+   .lgbox{
+     height: 35vh;
+     width: 40vw;
+     border: 6px;
+     border-style: double;
+     border-color: #000000;
+     margin: 0 auto;
+         }
+
+   .box{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-right: 18%;
+     margin-left: 10%;
+       }
+
+   .lgboximg{
+     height: 22vh;
+     width: auto;
+     margin-top:27px;
+     margin-right: 10px;
+            }
+
+   .lgcontent{
+     text-align: center;
+     line-height: 10px;
+     font-family: sam;
+     padding-top: 9%;
+     padding-left: 10%;
+     border-left: solid;
+     height: 25vh;
+     margin:6% 0%;
+     font-weight: bolder;
+     border-color: #000000;
+             }
+
+
+             .lgcontentf{
+              font-size: 400%;
+              font-weight: 900;
+            }
+            .lgcontentp{
+              font-size: 120%;
+              font-weight: 600;
+            }
+
+   .sliderbox{box-shadow: black;}
+
+     .sliderone{
+       grid-column: 2;
+       margin-top:5%;
+       margin-bottom: 5%;
+              }
+/*==============================================================================FONTS==================================================================================*/
+
+    @font-face {
+      font-family: sam;
+      src: url('Images/sam.TTF');
+               }
+
+  /*==============================================================================NAV-BAR==============================================================================*/
+     .bg-light{background-color: #E0DDCF!important;}
+
+     .nav-bg{font-family:sam;
+             font-size:160%;
+             font-weight:bold;
+            }
+
+     a:-webkit-any-link {
+      color: #2E1E0F; }
+
+  .navlink :hover{color:#8C5E58;}
+
+  /*==============================================================================CARDS==================================================================================*/
+
+  .cardone{font-family:Gabriola;
+            text-align:center;
+            font-size:150%;
+          }
+
+  .size{font-size:125%;}        
+  .size1{font-size:85%}
+  
+     .topimg{height:60vh;
+             width:auto;}
+
+     .firstcard{display:grid;
+       grid-template-columns:  (var(--fccolumn));
+                grid-auto-rows: (var(--fcrow));
+               }
+
+    .secondimg{
+      height:45vh;
+      width:auto;}
+
+    .secondcard{display:grid;
+                grid-template-columns:  (var(--sccolumn));
+                grid-auto-rows: (var(--scrow));
+                grid-row-gap:20px;
+               }
+
+    .thirdimg{height:45vh;
+              width:100%;}
+
+    .thirdcard{
+      display:grid;
+      grid-template-columns:  (var(--sccolumn));
+      grid-auto-rows: (var(--tcrow));
+      grid-row-gap:20px}
+
+    .card-body{padding:0.6rem}
+    .card-body{padding:0.6rem;}
+
+/*==============================================================================ANIMATION==================================================================================*/
+
+.slideanim {
+      visibility:hidden;
+      visibility:visible\9;
+           }
+
+  .slideanim.slide {
+      visibility: visible;
+      animation: slide 1s;
+                   }
+
+  .slideanim::after {
+      content: "";
+      display: table;
+      clear: both;
+                    }
+
+  @keyframes slide {
+      0% {
+          opacity: 0;
+          transform: translateY(50%);
+         }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+           }
+                   }
+
+/*=========================================================================FOOTER STYLE===============================================================================*/
+
+     .last{ height:15vh;
+      width:100%;
+
+      background:  linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),url("Images/one.jpg");
+      padding-top: 6%;}
+      /*==============================================================================MEDIA QUERIES==================================================================================*/
+@media only screen and (max-width:480px){
+  .lgbox{
+       width: 45vh;
+  }
+  .top{
+    height: 50vh;
+    padding-top: 15%;
+  }
+  .lgboximg{
+    height: 15vh;
+    margin-top:46px;
+     margin-right: 8px;
+  }
+  .box{
+    margin-left: 5%;
+      }
+  .lgcontentf{
+        font-size: 265%;
+        font-weight: 900;
+      }
+  .lgcontentp{
+        font-size: 90%;
+        font-weight: 600;
+      }
+  .lgcontent{
+    margin-top: 10%;
+  }
+  .webcont{
+    grid-template-columns: 10px auto 10px;
+    
+}
+.imageclass{
+    width:10vw;
+    height:35vh;}
+
+.topimg{width:90vw;
+height:60vh;
+}
+
+.secondimg{width:90vw;}
+
+.h2{font-size:5%;}
+
+.maincont{grid-template-columns: 20px auto 20px;}
+}
+/*==============================================================================END==================================================================================*/
+/*==============================================================================MEDIA QUERIES==================================================================================*/
+
+
+
+
+/*==============================================================================END==================================================================================*/
+
+
