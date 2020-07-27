@@ -3,21 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Join Us</title>
   <!--========================================================================BOOTSTRAP CSS LINK=====================================================================-->
   <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!--===============================================EXTERNAL CSS FILE LINK==========================================-->
 
-<link rel="stylesheet" type="text/css"href="sign.css">
-
-<link rel="stylesheet" type="text/css"href="search.css">
 
 <link rel="stylesheet" type="text/css" href="index.css">
 
 <link rel="stylesheet" type="text/css" href="joinUs.css">
 
-<link rel="stylesheet" type="text/css" href="ShopUs.css">
 
 <!--========================================================================BOOTSTRAP JS LINK=========================================================================-->
 <!-- JS, Popper.js, and jQuery -->
@@ -62,17 +58,18 @@
                   <a class="nav-link" href="ShopUs.html">Shop With Us &nbsp&nbsp&nbsp&nbsp • </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="joinUs.html">Join Us &nbsp&nbsp&nbsp&nbsp • </a>
+                  <a class="nav-link active" href="joinUs.html">Join Us &nbsp&nbsp&nbsp&nbsp • </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up/Sign-In &nbsp&nbsp&nbsp&nbsp • </a>
+                  <a class="nav-link" href="signup.html">Sign-Up &nbsp&nbsp&nbsp&nbsp • </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Contact Us">Contact Us &nbsp&nbsp&nbsp&nbsp • </a>
+                  <a class="nav-link" href="signin.html">Sign-In &nbsp&nbsp&nbsp&nbsp • </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Cart</a>
+                  <a class="nav-link" href="#hello">Contact Us</a>
                 </li>
+            
               </ul>
     </div>
     <a style="font-size:160%;"class="navbar-brand " href="index.html">
@@ -80,63 +77,6 @@
       KRAFTIFY
     </a>
   </nav>
-  <div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-    <!-- backend-file -->
-    <form class="modal-content" action="/action_page.php"> 
-      <div class="container">
-        <div class="button-flex">
-        <button type="button" onclick="upshow()">Sign Up</button>
-        <button type="button" onclick="inshow()">Sign In</button>
-      </div>
-        <div id="#signup" class="signup">
-        <p>Please fill in this form to create an account.</p>
-        <hr>
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-  
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-  
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-        
-        <label>
-          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-        </label>
-        
-       
-  
-        <div class="clearfix">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <button type="submit" class="signupbtn">Sign Up</button>
-        </div>
-        </div>
-        
-        <div id="signin">
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-    
-  
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-    
-        
-          <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-          </label>
-          
-         
-    
-          <div class="clearfix">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign In</button>
-          </div>
-  
-        </div>
-      </div>
-    </form>
-  </div>
 
 
   <h1>JOIN US NOW:</h1>
@@ -221,6 +161,8 @@
       </div>
     </div>
     
+    <a name="hello"></a>
+
     <footer>
     <!-- Footer Links -->
     <div class="container text-center text-md-left mt-5">
@@ -310,7 +252,7 @@
   <!-- Footer -->
   <div class="last"></div>
   </footer>
-<script src="sign.js"></script>
+
 </body>
 
 </html>

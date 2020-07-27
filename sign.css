@@ -1,11 +1,13 @@
 /* Full-width input fields */
+body{font-family:Gabriola;
+     font-size:130%;}
 input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
-    background: #f1f1f1;
+    background: #E0DDCF;
   }
   
   /* Add a background color when the inputs get focus */
@@ -16,8 +18,8 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
   button:not(.navbar-toggler) {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #826553;
+    color: #E0DDCF;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -27,7 +29,7 @@ input[type=text], input[type=password] {
   }
   
   button:hover {
-    opacity:1;
+    opacity:0.6;
   }
   
   /* Extra styles for the cancel button */

@@ -1,0 +1,70 @@
+ /* Set a style for all buttons (REOMVE IT while using popup) */
+  button:not(.navbar-toggler) {
+    background-color: #8C5E58;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #020202c2;
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+  .pop-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% 4%; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 90vw; /* Could be more or less, depending on screen size */
+    height: 85vh;
+  }
+  
+  .cartcontent {
+    background-color: #fefefe;
+    margin: 5% auto 15% 70%; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25vw; /* Could be more or less, depending on screen size */
+    height: 85vh;
+  }
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+ @media only screen and (max-width:480px){
+   .pop-content{
+     width: 80vw;
+   }
+   .cartcontent {
+     width: 55vw;
+     margin-left: 20%;
+   }
+
+ }
